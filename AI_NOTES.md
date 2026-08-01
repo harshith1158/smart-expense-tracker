@@ -36,6 +36,8 @@ I validated the project in a few practical ways:
 There were a few ideas that were reasonable, however I did not use them for this submission:
 - I did not add a database layer because the assignment allows local JSON storage, and the simpler approach kept the setup lightweight and easy for the evaluator to run.
 - I did not add a monthly summary endpoint because the Swagger/OpenAPI docs bonus added more immediate value without changing the core API contract.
+- A separate config.py / environment-variable setup for the storage file path — reasonable for a "real" production app, but I judged it as over-engineering for a 4-hour take-home and kept the path as a constructor default instead.
+- Docker support — I considered it since it was listed as a bonus option, but skipped it because the assignment caps bonuses at one, and Docker adds a dependency (the evaluator needs Docker installed) that a plain pip install doesn't. Swagger felt like a lower-friction win for the reviewer.
 
 ## To Conclude :
 
